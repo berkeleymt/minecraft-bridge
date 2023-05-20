@@ -1,0 +1,7 @@
+name: MinecraftDiscordBridge
+version: 0.1.0
+main: edu.berkeley.bmt.minecraft_discord_bridge.Plugin
+description: Bridging Minecraft and Discord chats
+author: Oliver Ni
+website: https://bmt.berkeley.edu/
+api-version: 1.19
