@@ -24,7 +24,7 @@ public class DiscordListener extends ListenerAdapter {
             return;
         }
 
-        String msg = String.format("《%s》 %s", event.getAuthor().getAsTag(), event.getMessage().getContentDisplay());
+        String msg = String.format("«%s» %s", event.getAuthor().getAsTag(), event.getMessage().getContentDisplay());
         plugin.getServer().broadcast(Component.text(msg));
     }
 }

@@ -1,5 +1,5 @@
 name: MinecraftDiscordBridge
-version: 0.1.0
+version: 0.1.1
 main: edu.berkeley.bmt.minecraft_discord_bridge.Plugin
 description: Bridging Minecraft and Discord chats
 author: Oliver Ni
