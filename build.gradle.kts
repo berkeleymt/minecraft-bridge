@@ -1,5 +1,7 @@
 plugins {
     application
+    id("com.github.johnrengelman.shadow") version "8.1.1"
+    id("java")
 }
 
 repositories {
@@ -9,6 +11,8 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
+    implementation("net.dv8tion:JDA:5.0.0-beta.9")
+    implementation("club.minnced:discord-webhooks:0.8.2")
 }
 
 java {

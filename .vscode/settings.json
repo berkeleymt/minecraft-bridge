@@ -1,6 +1,6 @@
 {
   "java.configuration.updateBuildConfiguration": "automatic",
-  "java.compile.nullAnalysis.mode": "automatic",
+  "java.compile.nullAnalysis.mode": "disabled",
   "yaml.schemas": {
     "https://json.schemastore.org/bukkit-plugin.json": "file:///Users/oliver/gh/berkeleymt/minecraft-bridge/app/src/main/resources/plugin.yml"
   }
