@@ -8,6 +8,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 import club.minnced.discord.webhook.WebhookClient;
+import club.minnced.discord.webhook.send.AllowedMentions;
 import club.minnced.discord.webhook.send.WebhookMessageBuilder;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import net.dv8tion.jda.api.JDA;
@@ -32,6 +33,7 @@ public class MinecraftListener implements Listener {
         WebhookMessageBuilder builder = new WebhookMessageBuilder();
         builder.setUsername(player.getName());
         builder.setAvatarUrl(String.format("https://crafatar.com/avatars/%s?overlay", player.getUniqueId().toString()));
+        builder.setAllowedMentions(AllowedMentions.none());
         builder.setContent(componentToString(event.message()));
         webhookClient.send(builder.build());
     }
